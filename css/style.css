@@ -2,3 +2,66 @@
 	margin: 0;
 	padding: 0;
 }
+
+#regModalOuter {
+	display: none;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#regModalOuter:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#regModalInner {
+	display: inline-block;
+	vertical-align: middle;
+	width: 300px;
+	position: relative;
+}
+
+#regModalOuter:target {
+	display: block;
+}
+
+#regModalContent {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	position: relative;
+	background-color: #fff;
+}
+
+.closeModal {
+	text-decoration: none;
+}
+
+.closeModal:before {
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.7;
+}
+
+.closeModal:after {
+	content: "\00D7";
+	position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 999;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 0 5px;
+}
