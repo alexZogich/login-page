@@ -3,6 +3,44 @@
 	padding: 0;
 }
 
+body {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.no-underlined { text-decoration: none; }
+li { list-style-type: none; }
+a:visited { color: inherit;}
+
+.header-nav {
+	padding: 20px 5px;
+	color: #205081;
+	font-size: 20px;
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+.nav-list {
+	float: right;
+}
+
+.nav-item {
+	margin: 0 10px;
+	display: inline-block;
+}
+
+.nav-item input {
+	padding: 5px;
+	font-size: 14px;
+	border: 1px solid #205081;
+	border-radius: 3px;
+}
+
+.nav-item input:focus {
+	border: 1px #fff;
+	border-radius: 3px;
+}
+
 #regModalOuter {
 	display: none;
 	text-align: center;
