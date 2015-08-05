@@ -21,11 +21,22 @@ label { font-size: 16px;}
 	margin: 0 auto;
 }
 
+.reg-button {
+	border: 1px solid #4080BF;
+	border-radius: 3px;
+}
+
+.reg-button:hover {
+	color: #fff;
+	background-color: #4080BF;
+}
+
 .nav-list {
 	float: right;
 }
 
 .nav-item {
+	padding: 5px;
 	margin: 0 10px;
 	display: inline-block;
 }
