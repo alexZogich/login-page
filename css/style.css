@@ -24,10 +24,30 @@ label { font-size: 16px;}
 	margin-left: 25px;
 }
 
+.nav-logo {
+	margin-left: 20px;
+	width: 150px;
+	height: 40px;
+	background-image: url("../img/brick.png");
+	background-size: 80%;
+	border: 1px solid #FFF;
+	border-radius: 5px;
+	float: left;
+	text-align: center;
+	padding-top: 7px;
+}
+
+.logo-title {
+	font-size: 28px;
+	font-family: Impact, Charcoal, sans-serif;
+	color: #FFF;
+}
+
 .header-nav {
 	padding: 20px 5px;
 	color: #205081;
 	font-size: 20px;
+	min-width: 920px;
 	max-width: 1040px;
 	margin: 0 auto;
 }
@@ -43,6 +63,7 @@ label { font-size: 16px;}
 }
 
 .nav-list {
+	margin-top: 5px;
 	float: right;
 }
 
