@@ -12,6 +12,7 @@ body {
 li { list-style-type: none; }
 a:visited { color: inherit;}
 label { font-size: 16px;}
+.clearfix:after { content: ""; display: table; clear: both; }
 
 .underline {
 	width: 90%;
