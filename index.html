@@ -11,11 +11,11 @@
 		<nav class="header-nav">
 			<ul class="nav-list">
 				<label for="userLogin">Login:</label>
-				<li class="nav-item"><input type="text" id="userLogin"></li>
+				<li class="nav-item"><input class="big-input" type="text" id="userLogin"></li>
 				<label for="userPass">Password</label>
-				<li class="nav-item"><input type="password" id="userPass"></li>
+				<li class="nav-item"><input class="big-input" type="password" id="userPass"></li>
 				<li class="nav-item"><a href="#" class="no-underlined" title="Get Started">Log In</a></li>
-				<li class="nav-item reg-button"><a href="#regModalOuter" class="no-underlined" title="Get Started">Get Started</a></li>
+				<a href="#regModalOuter" class="no-underlined" title="Get Started"><li class="nav-item reg-button">Get Started</li></a>
 			</ul>
 		</nav>
 	</header>
@@ -23,7 +23,29 @@
 		<div id="regModalInner">
 			<a href="#" title="Close" class="closeModal"></a>
 			<div id="regModalContent">
-				<h1>Get Started</h1>
+				<h2 class="title-left">Get Started</h2>
+				<div class="underline"></div>
+				<div class="items-container">
+					<div class="reg-item error">
+						<label for="regLogin">Username:</label>
+						<input class="big-input" type="text" id="regLogin">
+					</div>
+					<div class="reg-item">
+						<label for="regEmail">Email:</label>
+						<input class="big-input" type="text" id="regEmail" required>
+					</div>
+					<div class="reg-item">
+						<label for="regPass">Password:</label>
+						<input class="big-input" type="text" id="regPass">
+					</div>
+					<div class="reg-item">
+						<label for="regPassRepeat">Confirm Password:</label>
+						<input class="big-input" type="text" id="regPassRepeat">
+					</div>
+					<div class="reg-item">
+						<button class="btn-submit" type="submit" id="regSubmit">Register</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

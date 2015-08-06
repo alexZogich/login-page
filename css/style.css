@@ -13,6 +13,17 @@ li { list-style-type: none; }
 a:visited { color: inherit;}
 label { font-size: 16px;}
 
+.underline {
+	width: 90%;
+	margin: 0 auto;
+	border-bottom: 1px solid #DADADA
+}
+
+.title-left {
+	text-align: left;
+	margin-left: 25px;
+}
+
 .header-nav {
 	padding: 20px 5px;
 	color: #205081;
@@ -41,15 +52,15 @@ label { font-size: 16px;}
 	display: inline-block;
 }
 
-.nav-item input {
+.big-input {
 	padding: 5px;
 	font-size: 14px;
 	border: 1px solid #205081;
 	border-radius: 3px;
 }
 
-.nav-item input:focus {
-	border: 1px #fff;
+.big-input:focus {
+	border: 1px solid #fff;
 	border-radius: 3px;
 }
 
@@ -73,7 +84,7 @@ label { font-size: 16px;}
 #regModalInner {
 	display: inline-block;
 	vertical-align: middle;
-	width: 300px;
+	width: 540px;
 	position: relative;
 }
 
@@ -86,6 +97,17 @@ label { font-size: 16px;}
 	border-radius: 10px;
 	position: relative;
 	background-color: #fff;
+	padding: 10px 5px;
+}
+
+.reg-item {
+	margin: 20px 10px;
+}
+
+.items-container {
+	width: 360px;
+	padding-right: 150px;
+	text-align: right;
 }
 
 .closeModal {
@@ -114,4 +136,51 @@ label { font-size: 16px;}
     border-radius: 10px;
     background-color: #fff;
     padding: 0 5px;
+}
+
+.btn-submit {
+	padding: 7px 12px;
+	color: #FFF;
+	background-color: #4080BF;
+	border: 1px solid #4080BF;
+	border-radius: 3px;
+}
+
+.btn-submit:hover {
+	cursor: pointer;
+}
+
+.btn-submit:active {
+	background-color: #1E73C7;
+}
+
+.error {
+	position: relative;
+}
+
+.error:after {
+	width: 160px;
+	text-align: left;
+	margin-left: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #FF0000;
+	padding: 2px;
+	border: 1px solid #FF0000;
+	border-radius: 3px;
+	position: absolute;
+	content: "Name length should be at least 3 symbols"
+}
+
+.error:before {
+	position: absolute;
+	top: 8px;
+	right: -10px;
+	content: "";
+	width: 0; 
+	height: 0; 
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid red;
 }
